@@ -19,7 +19,7 @@ class App < Sinatra::Base
     erb :display_puppy
     
   end
- binding.pry
+binding.pry
  
 
 end
