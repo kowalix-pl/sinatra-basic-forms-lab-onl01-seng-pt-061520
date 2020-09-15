@@ -11,15 +11,16 @@ class App < Sinatra::Base
   end
   
   post '/puppy' do 
-    @params = params
-    @puppy = Puppy.new(params)
-    # @puppy.name = Puppy.params[:name]
+   @params = params
+    # @puppy = Puppy.new(params)
+    @puppy.name = Puppy.params[:name]
     # @puppy.breed = Puppy.params[:breed]
     # @puppy.age = Puppy.params[:age]
     erb :display_puppy
-    
+
+    binding.pry
   end
-binding.pry
+ 
  
 
 end
